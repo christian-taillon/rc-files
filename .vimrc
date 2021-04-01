@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/goyo.vim'
 " on-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+" wakatime
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 " basics
