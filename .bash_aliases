@@ -19,7 +19,9 @@ alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
 alias rm='rm -Iv --one-file-system --preserve-root'
 
+# bedian customization
 alias dpi='gsettings set org.gnome.desktop.interface text-scaling-factor'
+alias cat="batcat"
 
 # function checks if the application is installed
 function __add_command_replace_alias() {
