@@ -17,15 +17,29 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias bc='bc -l'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias bc='bc -l'
+alias cat="batcat"
+
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
 alias rm='rm -Iv --one-file-system --preserve-root'
 
+# Alias's to show disk space and space used in a folder
+alias diskspace="du -S | sort -n -r |more"
+alias folders='du -h --max-depth=1'
+alias folderssort='find . -maxdepth 1 -type d -print0 | xargs -0 du -sk | sort -rn'
+alias tree='tree -CAhF --dirsfirst'
+alias treed='tree -CAFd'
+alias mountedinfo='df -hT'
+
+# gnome dpi scale customization
 alias dpi='gsettings set org.gnome.desktop.interface text-scaling-factor'
 
 # function checks if the application is installed
