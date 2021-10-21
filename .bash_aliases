@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
+# enable color support of ls and also add handy aliases
 
 export __LS_OPTIONS='--color=auto -h'
+
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 alias ls='ls $__LS_OPTIONS'
 alias ll='ls $__LS_OPTIONS -l'
@@ -14,6 +18,9 @@ alias ...='cd ../..'
 
 alias bc='bc -l'
 
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
