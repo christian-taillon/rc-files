@@ -6,6 +6,10 @@ export __LS_OPTIONS='--color=auto -h'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
+alias ipsa=sudo ip -br -c addr show
+alias ipsl=sudo ip -br -c link show
+alias ip='ip -c'
+
 alias ls='ls $__LS_OPTIONS'
 alias ll='ls $__LS_OPTIONS -l'
 alias la='ls $__LS_OPTIONS -la'
