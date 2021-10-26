@@ -6,8 +6,8 @@ export __LS_OPTIONS='--color=auto -h'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
-alias ipsa=ip -br -c addr show
-alias ipsl=ip -br -c link show
+alias ipsa=`ip -br -c addr show`
+alias ipsl=`ip -br -c link show`
 alias ip='ip -c'
 
 alias ls='ls $__LS_OPTIONS'
