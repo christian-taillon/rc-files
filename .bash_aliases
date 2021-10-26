@@ -6,8 +6,8 @@ export __LS_OPTIONS='--color=auto -h'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 
-alias ipsa=sudo ip -br -c addr show
-alias ipsl=sudo ip -br -c link show
+alias ipsa=ip -br -c addr show
+alias ipsl=ip -br -c link show
 alias ip='ip -c'
 
 alias ls='ls $__LS_OPTIONS'
@@ -44,6 +44,7 @@ alias treed='tree -CAFd'
 alias mountedinfo='df -hT'
 
 # gnome dpi scale customization
+# this will not work in other DEs and can be commented out or deleted in those cases.
 alias dpi='gsettings set org.gnome.desktop.interface text-scaling-factor'
 
 # function checks if the application is installed
