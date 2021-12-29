@@ -29,7 +29,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias bc='bc -l'
-alias cat="batcat"
+#alias cat="batcat"
 
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
