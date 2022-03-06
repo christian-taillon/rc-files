@@ -9,7 +9,7 @@ source "$HOME/.antigen.zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="murilasso"
+# ZSH_THEME="murilasso"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,7 +71,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions jsontools)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,8 +106,10 @@ source $ZSH/oh-my-zsh.sh
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.bash_secrets'
 
 
-# AntiGent
-antigen bundle zsh-users/zsh-autosuggestions
+# Antigen
+antigen theme murilasso
+antigen bundle git
 antigen bundle sobolevn/wakatime-zsh-plugin
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
 antigen apply
