@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # enable color support of ls and also add handy aliases
 
-export __LS_OPTIONS='--color=auto -h'
+#bash options
+#export __LS_OPTIONS='--color=auto -h'
+#zsh options
+export __LS_OPTIONS='--color=always'
 
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
