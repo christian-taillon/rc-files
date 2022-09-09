@@ -4,7 +4,12 @@
 #bash options
 #export __LS_OPTIONS='--color=auto -h'
 #zsh options
+
+alias sudo='sudo '
+
 export __LS_OPTIONS='--color=always'
+
+alias "apt_up"="apt update && apt list --upgradable"
 
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
@@ -37,6 +42,10 @@ alias bc='bc -l'
 alias mkdir='mkdir -p -v'
 alias mv='mv -iv'
 alias rm='rm -Iv --one-file-system --preserve-root'
+
+# Fun
+alias watchstarwars="telnet towel.blinkenlights.nl"
+alias watchbonsai="cbonsai -l -i -w 10  -L 64 -b 2"
 
 # Alias's to show disk space and space used in a folder
 alias diskspace="du -S | sort -n -r |more"
