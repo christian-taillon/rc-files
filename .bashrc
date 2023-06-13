@@ -12,7 +12,8 @@ esac
 HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
-shopt -s histappend
+# removing for zshrc compatibility
+# shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
@@ -20,11 +21,11 @@ HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+# shopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-shopt -s globstar
+# shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -90,6 +91,8 @@ if [ -f ~/.bash_secrets ]; then
     . ~/.bash_secrets
 fi
 
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+export NODE_OPTIONS=--max_old_space_size=2048
+
+# Eport path for go
+export PATH=$PATH:/usr/local/go/bin
+. "$HOME/.cargo/env"

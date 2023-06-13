@@ -59,6 +59,9 @@ alias mountedinfo='df -hT'
 # this will not work in other DEs and can be commented out or deleted in those cases.
 alias dpi='gsettings set org.gnome.desktop.interface text-scaling-factor'
 
+# change mouse scroll speed (requires imwheel)
+alias chscroll='bash <(curl -s nicknorton.net/mousewheel.sh)'
+
 # function checks if the application is installed
 function __add_command_replace_alias() {
     if [ -x "`which $2 2>&1`" ]; then
